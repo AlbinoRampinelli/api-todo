@@ -15,14 +15,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-// function isValidObjectId(id){ 
-//     if(ObjectId.isValid(id)){
-//         if((String)(new ObjectId(id)) === id)
-//             return true;
-//         return false;
-//     }
-//     return false;
-// }
 
 // mongoose.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true }, (err) => {
 //     if(err) return console.log('erro de conexão');
