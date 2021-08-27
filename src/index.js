@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express())
 
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true,  useUnifiedTopology: true}, (err) => {
+mongoose.connect('mongodb+srv://todo:todo@cluster0.pqfvb.mongodb.net/todoapp?retryWrites=true&w=majority', { useNewUrlParser: true,  useUnifiedTopology: true}, (err) => {
     if(err) return console.log('erro de conexão com o database');
     console.log('Connected to database')
 });
